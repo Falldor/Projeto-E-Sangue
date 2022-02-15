@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EsangueApplication<esangue>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.esangue.EsangueApplication",
+            "projectName": "esangue",
+            "args": ""
+        }
+    ]
+}

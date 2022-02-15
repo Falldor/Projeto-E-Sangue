@@ -1,0 +1,17 @@
+mat-toolbar{
+    background-color: #D8042C;
+}
+.btnHome{
+    font-size:30px;
+    align-items: center;
+    border-right: 1px solid white;
+    border-radius: 0px;
+}
+.btn{
+    font-size: 20px;
+    margin: auto;
+}
+
+span{
+    font-size: 30px;
+}

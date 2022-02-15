@@ -1,0 +1,29 @@
+<div class="content">
+    <form>Doador:
+        <mat-form-field>
+            <input type="text" matInput [matAutocomplete]="auto" name="" id="">
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let name of names" [value]="name">
+                    {{name}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+    <form></form>
+</div>
+
+<div class="content">
+    <form>Paciente:
+        <mat-form-field>
+            <input type="text" matInput [matAutocomplete]="autoP" name="" id="">
+            <mat-autocomplete #autoP="matAutocomplete">
+                <mat-option *ngFor="let namepatient of namesP" [value]="namepatient">
+                    {{namepatient}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+    <form></form>
+</div>
+
+<button mat-button> Realizar doação</button>

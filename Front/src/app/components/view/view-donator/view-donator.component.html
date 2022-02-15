@@ -1,0 +1,39 @@
+<h1>Lista de Doadores</h1>
+
+<div class="container">
+  <table mat-table class="mat-elevation-z8" [dataSource]="donators">
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Ações </th>
+      <td mat-cell *matCellDef="let row"> 
+        <a href="listarDoadores/delete/{{ row.id }}">
+          <i class="material-icons">delete</i>
+        </a></td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Nome </th>
+      <td mat-cell *matCellDef="let row"> <a href="listarDoadores/update/{{row.id}}">{{row.nome}}</a> </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="age">
+      <th mat-header-cell *matHeaderCellDef> Idade </th>
+      <td mat-cell *matCellDef="let row"> {{row.idade}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="bloodtype">
+      <th mat-header-cell *matHeaderCellDef> Tipo Sanguíneo </th>
+      <td mat-cell *matCellDef="let row"> {{row.tipoSanguineo}} {{row.fatorRH}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastdonation">
+      <th mat-header-cell *matHeaderCellDef> Última Doação </th>
+      <td mat-cell *matCellDef="let row"> {{row.ultimaDoacao}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+
+  

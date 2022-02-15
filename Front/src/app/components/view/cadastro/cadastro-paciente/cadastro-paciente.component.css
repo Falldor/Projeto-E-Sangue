@@ -1,0 +1,83 @@
+.example-form {
+    min-width: 150px;
+    display: block;
+    justify-content: center;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.cancelButton {
+    margin-left: 50px;
+    color: crimson;
+    background-color: white;
+}
+
+.radBut {
+    color: white;
+}
+
+.sendButton {
+    color: crimson;
+    background-color: white;
+}
+  
+  .example-full-width {
+    justify-content: center;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .age {
+      width: 30%;
+      color: white;
+  }
+
+  .rhesus {
+      margin-top: 10px;
+  }
+
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+
+  .ageDiv {
+      color: white;
+  }
+
+  .dateDiv {
+      margin-top: 20px;
+      width: 100%;
+  }
+  
+  .first-field {
+    padding-right: 8px;
+  }
+
+  .example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-container .mat-form-field {
+    width: 220px;
+  }
+  
+  .example-container form {
+    margin-bottom: 20px;
+  }
+  
+  .example-container form > * {
+    margin: 5px 0;
+  }
+  
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }

@@ -1,0 +1,37 @@
+.CartãoInicial{
+    width: 65%;
+    margin: 4rem auto ;
+    background-color: #F14B4B;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.TipoSanguineo{
+    display: inline-block;
+    width: 15%;
+    height:10%;
+    margin:1rem 3rem;
+    justify-content: center;
+    background-color: #8D0327;
+    border-radius: 15px;
+    color: white;
+}
+
+mat-card-content{
+    margin-top: 25px;
+    font-size: large;
+    
+}
+
+div{
+    width: 90%;
+    margin: auto;
+}
+.tabela{
+    width: 100%;
+}
+.tabela th{
+    text-align: center;
+}

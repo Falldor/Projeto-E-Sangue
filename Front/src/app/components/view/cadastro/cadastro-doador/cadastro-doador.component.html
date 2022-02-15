@@ -1,0 +1,73 @@
+<form class="form">
+  <h1>Cadastro de Doador</h1>
+
+  <table class="full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Nome</mat-label>
+          <input [(ngModel)] = "donator.nome" name="name" matInput>
+          </mat-form-field>
+      </td>
+
+      <td>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>CPF</mat-label>
+          <input [(ngModel)] = "donator.cpf" name="cpf" matInput>
+          </mat-form-field>
+      </td>
+    </tr>
+
+  <tr>
+      <td class="first-field">
+          <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Idade</mat-label>
+              <input matInput [(ngModel)] = "donator.idade" name="age" type="number" value="" min="16" max="69">
+          </mat-form-field>
+          <td>
+            <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Endereço</mat-label>
+            <input matInput [(ngModel)] = "donator.endereco" name="address" placeholder="Ex: Rua Fiora Laurent">
+          </mat-form-field>
+        </td>
+  </tr>
+
+  <tr>
+    <td class="first-field">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Contato</mat-label>
+        <input matInput [(ngModel)] = "donator.telefone" name="phone" type="tel" mat-input-placeholder="XXXXXX" value="">
+      </mat-form-field>
+    </td>
+
+    <td class="first-field">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Doação mais recente</mat-label>
+        <input matInput [(ngModel)] = "donator.ultimaDoacao" name="lastDonation" type="date" value="">
+      </mat-form-field>
+    </td>
+
+  </tr>
+
+    <div class="bloodType">
+      <label>Tipo sanguíneo: </label>
+      <mat-radio-group [(ngModel)] = "donator.tipoSanguineo" name="bloodtype">
+        <mat-radio-button name="bloodtypeA" class="radBut" value="Apositivo">A +</mat-radio-button>
+        <mat-radio-button name="bloodtypeB" class="radBut" value="Anegativo">A -</mat-radio-button>
+        <mat-radio-button name="bloodtypeAB" class="radBut" value="Bpositivo">B +</mat-radio-button>
+        <mat-radio-button name="bloodtypeO" class="radBut" value="Bnegativo">B -</mat-radio-button>
+        <mat-radio-button name="bloodtypeA" class="radBut" value="ABpositivo">AB +</mat-radio-button>
+        <mat-radio-button name="bloodtypeB" class="radBut" value="ABnegativo">AB -</mat-radio-button>
+        <mat-radio-button name="bloodtypeAB" class="radBut" value="Opositivo">O +</mat-radio-button>
+        <mat-radio-button name="bloodtypeO" class="radBut" value="Onegativo">O -</mat-radio-button>
+      </mat-radio-group>
+  </div>
+
+  <div class="buttons">
+      <button mat-raised-button class="sendButton" (click)="createDonator()">Cadastrar</button>
+      <button mat-raised-button class="cancelButton" (click)="cancelar()">Cancelar</button>
+  </div>
+  
+  </table>
+</form>
+      

@@ -1,0 +1,19 @@
+<mat-toolbar>
+    
+    <button mat-button class="btnHome" (click)="navHome()"><mat-icon>whatshot</mat-icon>E-sangue</button>
+
+    <button mat-button [mat-menu-trigger-for]="mDoacao" class="btn">Doador</button>
+    <mat-menu #mDoacao="matMenu" >
+        <button mat-menu-item (click)="navCadastraDoador()">Cadastrar Doador</button>
+        <button mat-menu-item (click)="navListDoadores()">Lista de Doadores</button>
+    </mat-menu>
+
+    <button mat-button [mat-menu-trigger-for]="mPaciente" class="btn" >Paciente</button>
+    <mat-menu #mPaciente="matMenu">
+        <button mat-menu-item (click)="navCadastraPaciente()">Cadastra paciente</button>
+        <button mat-menu-item (click)="navListaPacientes()">Lista de paciente</button>
+    </mat-menu>
+
+    <button mat-button (click)="navDoacoes()" class="btn">Doação</button>
+   
+</mat-toolbar>

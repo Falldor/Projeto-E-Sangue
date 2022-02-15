@@ -1,0 +1,53 @@
+<form class="example-form">
+    <h1>Cadastro de Paciente</h1>
+  
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Hospital</mat-label>
+      <input [(ngModel)] = "patient.hospital" name="hospital" matInput value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Nome</mat-label>
+    <input matInput name="name" [(ngModel)] = "patient.nome">
+    </mat-form-field>
+    
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+      <td class="first-field">
+
+    <tr>
+        <td class="first-field">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Idade</mat-label>
+                <input matInput [(ngModel)] = "patient.idade" type="number" value="" min="16" max="69" name="idade">
+            </mat-form-field>
+            <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Endereço</mat-label>
+              <input matInput placeholder="Ex: Rua Fiora Laurent" name="endereco">
+            </mat-form-field>
+          </td>
+    </tr>
+  
+      <div class="bloodType">
+        <label>Tipo sanguíneo: </label>
+        <mat-radio-group [(ngModel)] = "patient.tipoSanguineo" name="bloodtype">
+          <mat-radio-button name="bloodtypeA" class="radBut" value="Apositivo">A +</mat-radio-button>
+          <mat-radio-button name="bloodtypeB" class="radBut" value="Anegativo">A -</mat-radio-button>
+          <mat-radio-button name="bloodtypeAB" class="radBut" value="Bpositivo">B +</mat-radio-button>
+          <mat-radio-button name="bloodtypeO" class="radBut" value="Bnegativo">B -</mat-radio-button>
+          <mat-radio-button name="bloodtypeA" class="radBut" value="ABpositivo">AB +</mat-radio-button>
+          <mat-radio-button name="bloodtypeB" class="radBut" value="ABnegativo">AB -</mat-radio-button>
+          <mat-radio-button name="bloodtypeAB" class="radBut" value="Opositivo">O +</mat-radio-button>
+          <mat-radio-button name="bloodtypeO" class="radBut" value="Onegativo">O -</mat-radio-button>
+        </mat-radio-group>
+    </div>
+  
+    <div class="buttons">
+        <button mat-raised-button class="sendButton" (click)="createPatient()">Cadastrar</button>
+        <button mat-raised-button class="cancelButton" (click)="cancelar()">Cancelar</button>
+    </div>
+    
+    </table>
+  </form>
+        

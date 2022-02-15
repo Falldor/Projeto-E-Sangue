@@ -1,0 +1,44 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form {
+    min-width: 150px;
+    display: block;
+    justify-content: center;
+  }
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.title {
+    padding: 10px 10px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(243, 55, 55);
+    width: 100%;
+}
+
+.full-width {
+    justify-content: center;
+    table-layout: fixed;
+    width: 100%;
+  }

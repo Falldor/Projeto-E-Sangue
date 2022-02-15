@@ -1,0 +1,45 @@
+<div class="content">
+  <form class="form">
+      <div class="title">
+          <h1>Atualizar Paciente</h1>
+      </div>
+    
+      <table class="full-width" cellspacing="20">
+        <tr>
+          <td>
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label>Nome</mat-label>
+              <input [(ngModel)]="patient.nome" name="name" matInput>
+              </mat-form-field>
+          </td>
+    
+          <td>
+            <mat-form-field class="full-width" appearance="fill">
+              <mat-label disable>Hospital</mat-label>
+              <input [(ngModel)]="patient.hospital" name="hospital" matInput>
+              </mat-form-field>
+          </td>
+      </tr>
+    
+      <tr>
+          <td class="first-field">
+              <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Idade</mat-label>
+                  <input [(ngModel)]="patient.idade" matInput name="age" type="number" value="" min="16" max="69">
+              </mat-form-field>
+              <td>
+                <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Tipo Sanguíneo</mat-label>
+                <input [(ngModel)]="patient.tipoSanguineo" matInput name="bloodType">
+              </mat-form-field>
+            </td>
+      </tr>
+
+      <div class="buttons">
+          <button mat-raised-button class="sendButton" (click)="update()" >Atualizar</button>
+          <button mat-raised-button class="cancelButton" routerLink="/listarDoadores">Cancelar</button>
+      </div>
+      
+      </table>
+    </form> 
+</div>
